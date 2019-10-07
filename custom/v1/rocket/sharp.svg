@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>sharp-rocket</title>
+    <desc>Created with Sketch.</desc>
+    <g id="sharp-rocket" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M9,19 L5,15 C5,14.6666667 5.33333333,14 6,13 L2,12 L4,9 L8,10 C12,4 18,2 22,2 C22,6 20,12 14,16 L15,20 L12,22 L11,18 C10,18.6666667 9.33333333,19 9,19 Z M15.5,10 C16.3284271,10 17,9.32842712 17,8.5 C17,7.67157288 16.3284271,7 15.5,7 C14.6715729,7 14,7.67157288 14,8.5 C14,9.32842712 14.6715729,10 15.5,10 Z" id="Combined-Shape" fill="#000000"></path>
+        <path d="M4,16 L5.25,17.25 C4.58333333,17.9166667 4.16666667,18.8333333 4,20 C5.16666667,19.8333333 6.08333333,19.4166667 6.75,18.75 L8,20 C6.66666667,21.3333333 4.66666667,22 2,22 C2,19.3333333 2.66666667,17.3333333 4,16 Z" id="Rectangle" fill="#000000"></path>
+    </g>
+</svg>

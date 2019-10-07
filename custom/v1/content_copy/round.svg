@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>round-content_copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="round-content_copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15,1 C15.5522847,1 16,1.44771525 16,2 C16,2.55228475 15.5522847,3 15,3 L4,3 L4,16 C4,16.5522847 3.55228475,17 3,17 C2.44771525,17 2,16.5522847 2,16 L2,3 C2,1.9 2.9,1 4,1 L15,1 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+        <path d="M8,5 L19,5 C20.1045695,5 21,5.8954305 21,7 L21,21 C21,22.1045695 20.1045695,23 19,23 L8,23 C6.8954305,23 6,22.1045695 6,21 L6,7 C6,5.8954305 6.8954305,5 8,5 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

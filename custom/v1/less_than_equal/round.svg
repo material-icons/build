@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>less_than_equal/round</title>
+    <desc>Created with Sketch.</desc>
+    <g id="less_than_equal/round" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M16.75,15 L9.25,10 L9.25,10 L16.75,5 C17.1642136,4.72385763 17.2761424,4.16421356 17,3.75 C16.7238576,3.33578644 16.1642136,3.22385763 15.75,3.5 L7.24807544,9.16794971 C6.78854675,9.47430216 6.66437288,10.0951715 6.97072534,10.5547002 C7.0439602,10.6645525 7.13822315,10.7588154 7.24807544,10.8320503 L15.75,16.5 C16.1642136,16.7761424 16.7238576,16.6642136 17,16.25 C17.2761424,15.8357864 17.1642136,15.2761424 16.75,15 Z" id="Path-Copy" fill="#000000"></path>
+        <path d="M17,20.998 L7,20.998 C6.44771525,20.998 6,20.5502847 6,19.998 C6,19.4457153 6.44771525,18.998 7,18.998 L17,18.998 C17.5522847,18.998 18,19.4457153 18,19.998 C18,20.5502847 17.5522847,20.998 17,20.998 Z" id="Icon-Path-Copy" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

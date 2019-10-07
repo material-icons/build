@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>outline-duo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="outline-duo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,4 C7.55469023,4 4,7.69312045 4,12.28 C4,16.3991655 7.5983023,20 11.72,20 C16.3380562,20 20,16.4634821 20,12 L20,4 L12,4 Z M20,2 C21.1,2 22,2.9 22,4 L22,12 C22,17.62 17.39,22 11.72,22 C6.49,22 2,17.5 2,12.28 C2,6.66 6.38,2 12,2 L20,2 Z" id="Icon-Path" fill="#000000" fill-rule="nonzero"></path>
+        <polygon id="Icon-Path" fill="#000000" fill-rule="nonzero" points="17 15 14 13 14 15 7 15 7 9 14 9 14 11 17 9"></polygon>
+    </g>
+</svg>

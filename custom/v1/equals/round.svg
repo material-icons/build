@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>equals/round</title>
+    <desc>Created with Sketch.</desc>
+    <g id="equals/round" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M18,9.998 L6,9.998 C5.44771525,9.998 5,9.55028475 5,8.998 C5,8.44571525 5.44771525,7.998 6,7.998 L18,7.998 C18.5522847,7.998 19,8.44571525 19,8.998 C19,9.55028475 18.5522847,9.998 18,9.998 Z" id="Icon-Path" fill="#000000" fill-rule="nonzero"></path>
+        <path d="M18,15.998 L6,15.998 C5.44771525,15.998 5,15.5502847 5,14.998 C5,14.4457153 5.44771525,13.998 6,13.998 L18,13.998 C18.5522847,13.998 19,14.4457153 19,14.998 C19,15.5502847 18.5522847,15.998 18,15.998 Z" id="Icon-Path-Copy" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

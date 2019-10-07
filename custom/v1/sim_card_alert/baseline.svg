@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>baseline-sim_card_alert</title>
+    <desc>Created with Sketch.</desc>
+    <g id="baseline-sim_card_alert" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M18,2 L10,2 L4.02,8 L4,20 C4,21.1 4.9,22 6,22 L18,22 C19.1,22 20,21.1 20,20 L20,4 C20,2.9 19.1,2 18,2 Z M13,17 L11,17 L11,15 L13,15 L13,17 Z M13,13 L11,13 L11,8 L13,8 L13,13 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

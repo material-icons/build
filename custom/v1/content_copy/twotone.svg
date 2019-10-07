@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>twotone-content_copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="twotone-content_copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M16,1 L4,1 C2.9,1 2,1.9 2,3 L2,17 L4,17 L4,3 L16,3 L16,1 Z" id="Icon-Path" fill="#000000" fill-rule="nonzero"></path>
+        <polygon id="Path" fill="#000000" fill-rule="nonzero" opacity="0.300000012" points="8 7 8 21 19 21 19 7"></polygon>
+        <path d="M8,7 L8,21 L19,21 L19,7 L8,7 Z M8,5 L19,5 C20.1045695,5 21,5.8954305 21,7 L21,21 C21,22.1045695 20.1045695,23 19,23 L8,23 C6.8954305,23 6,22.1045695 6,21 L6,7 C6,5.8954305 6.8954305,5 8,5 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

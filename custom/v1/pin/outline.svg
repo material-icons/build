@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>outline-pin</title>
+    <desc>Created with Sketch.</desc>
+    <g id="outline-pin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7,2 L17,2 L17,4 L15,5 L15,10 L18,13 L18,16 L13,16 L13,20 L12,23 L11,20 L11,16 L6,16 L6,13 L9,10 L9,5 L7,4 L7,2 Z M13,4 L11,4 L11,10.8284271 L8,13.8284271 L8,14 L16,14 L16,13.8284271 L13,10.8284271 L13,4 Z" id="Rectangle-Copy" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

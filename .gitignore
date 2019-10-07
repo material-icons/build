@@ -1,0 +1,7 @@
+.idea
+.DS_Store
+node_modules
+cache
+material-icons
+material-icons-font
+material-icons-png

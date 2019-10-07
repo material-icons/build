@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 54 (76408) - https://sketchapp.com -->
+    <title>round-sentiment_neutral</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="round-sentiment_neutral" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M9.75,14 L14.25,14 C14.6642136,14 15,14.3357864 15,14.75 L15,14.75 C15,15.1642136 14.6642136,15.5 14.25,15.5 L9.75,15.5 C9.33578644,15.5 9,15.1642136 9,14.75 L9,14.75 C9,14.3357864 9.33578644,14 9.75,14 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+        <circle id="Oval" fill="#000000" fill-rule="nonzero" cx="15.5" cy="9.5" r="1.5"></circle>
+        <circle id="Oval" fill="#000000" fill-rule="nonzero" cx="8.5" cy="9.5" r="1.5"></circle>
+        <path d="M11.99,2 C6.47,2 2,6.48 2,12 C2,17.52 6.47,22 11.99,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 11.99,2 Z M12,20 C7.58,20 4,16.42 4,12 C4,7.58 7.58,4 12,4 C16.42,4 20,7.58 20,12 C20,16.42 16.42,20 12,20 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

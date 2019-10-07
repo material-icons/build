@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 54 (76408) - https://sketchapp.com -->
+    <title>round-sentiment_slightly_dissatisfied</title>
+    <desc>Created with Sketch Beta.</desc>
+    <g id="round-sentiment_slightly_dissatisfied" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Icon-Oval" fill="#000000" fill-rule="nonzero" cx="15.5" cy="9.5" r="1.5"></circle>
+        <circle id="Icon-Oval" fill="#000000" fill-rule="nonzero" cx="8.5" cy="9.5" r="1.5"></circle>
+        <path d="M11.99,2 C6.47,2 2,6.48 2,12 C2,17.52 6.47,22 11.99,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 11.99,2 Z M12,20 C7.58,20 4,16.42 4,12 C4,7.58 7.58,4 12,4 C16.42,4 20,7.58 20,12 C20,16.42 16.42,20 12,20 Z M12,16.5 C12.537201,16.5 13.0364944,16.602892 13.4938951,16.7927354 C13.8886566,16.933197 14.1991993,16.7919583 14.3814907,16.5606509 C14.6256866,16.2507935 14.5971527,15.6219635 14.0935297,15.4176488 C13.4335874,15.1415389 12.7220721,14.9982394 12,15 C11.2613492,15 10.5625526,15.1461323 9.92423788,15.4059824 C9.4232352,15.6099344 9.33909777,16.2441828 9.6426265,16.5940537 C9.83973694,16.8212585 10.1674347,16.9091339 10.5030998,16.7883557 C10.9642126,16.6027463 11.4631793,16.5 12,16.5 Z" id="Icon-Shape" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

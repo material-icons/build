@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>round-pin</title>
+    <desc>Created with Sketch.</desc>
+    <g id="round-pin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M8,2 L16,2 C16.5522847,2 17,2.44771525 17,3 L17,3.38196601 C17,3.76073807 16.7859976,4.10700119 16.4472136,4.2763932 L15,5 L15,10 L17.7071068,12.7071068 C17.8946432,12.8946432 18,13.1489971 18,13.4142136 L18,15 C18,15.5522847 17.5522847,16 17,16 L13,16 L13,20 L12,23 L11,20 L11,16 L7,16 C6.44771525,16 6,15.5522847 6,15 L6,13.4142136 C6,13.1489971 6.10535684,12.8946432 6.29289322,12.7071068 L9,10 L9,5 L7.5527864,4.2763932 C7.21400238,4.10700119 7,3.76073807 7,3.38196601 L7,3 C7,2.44771525 7.44771525,2 8,2 Z" id="Rectangle" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

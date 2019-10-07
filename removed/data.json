@@ -1,0 +1,290 @@
+{
+	"settings": {
+		"name": "settings",
+		"categories": [
+			"action"
+		]
+	},
+	"star_rate": {
+		"name": "star_rate",
+		"categories": [
+			"action"
+		]
+	},
+	"play_circle_filled_white": {
+		"name": "play_circle_filled_white",
+		"categories": [
+			"av"
+		]
+	},
+	"alternate_email": {
+		"name": "alternate_email",
+		"categories": [
+			"communication"
+		]
+	},
+	"cell_wifi": {
+		"name": "cell_wifi",
+		"categories": [
+			"communication"
+		]
+	},
+	"location_off": {
+		"name": "location_off",
+		"categories": [
+			"communication"
+		]
+	},
+	"location_on": {
+		"name": "location_on",
+		"categories": [
+			"communication"
+		]
+	},
+	"weekend": {
+		"name": "weekend",
+		"categories": [
+			"content"
+		]
+	},
+	"battery_20": {
+		"name": "battery_20",
+		"categories": [
+			"device"
+		]
+	},
+	"battery_30": {
+		"name": "battery_30",
+		"categories": [
+			"device"
+		]
+	},
+	"battery_50": {
+		"name": "battery_50",
+		"categories": [
+			"device"
+		]
+	},
+	"battery_60": {
+		"name": "battery_60",
+		"categories": [
+			"device"
+		]
+	},
+	"battery_80": {
+		"name": "battery_80",
+		"categories": [
+			"device"
+		]
+	},
+	"battery_90": {
+		"name": "battery_90",
+		"categories": [
+			"device"
+		]
+	},
+	"battery_charging_20": {
+		"name": "battery_charging_20",
+		"categories": [
+			"device"
+		]
+	},
+	"battery_charging_30": {
+		"name": "battery_charging_30",
+		"categories": [
+			"device"
+		]
+	},
+	"battery_charging_50": {
+		"name": "battery_charging_50",
+		"categories": [
+			"device"
+		]
+	},
+	"battery_charging_60": {
+		"name": "battery_charging_60",
+		"categories": [
+			"device"
+		]
+	},
+	"battery_charging_80": {
+		"name": "battery_charging_80",
+		"categories": [
+			"device"
+		]
+	},
+	"battery_charging_90": {
+		"name": "battery_charging_90",
+		"categories": [
+			"device"
+		]
+	},
+	"network_cell": {
+		"name": "network_cell",
+		"categories": [
+			"device"
+		]
+	},
+	"network_wifi": {
+		"name": "network_wifi",
+		"categories": [
+			"device"
+		]
+	},
+	"signal_cellular_0_bar": {
+		"name": "signal_cellular_0_bar",
+		"categories": [
+			"device"
+		]
+	},
+	"signal_cellular_1_bar": {
+		"name": "signal_cellular_1_bar",
+		"categories": [
+			"device"
+		]
+	},
+	"signal_cellular_2_bar": {
+		"name": "signal_cellular_2_bar",
+		"categories": [
+			"device"
+		]
+	},
+	"signal_cellular_3_bar": {
+		"name": "signal_cellular_3_bar",
+		"categories": [
+			"device"
+		]
+	},
+	"signal_cellular_connected_no_internet_0_bar": {
+		"name": "signal_cellular_connected_no_internet_0_bar",
+		"categories": [
+			"device"
+		]
+	},
+	"signal_cellular_connected_no_internet_1_bar": {
+		"name": "signal_cellular_connected_no_internet_1_bar",
+		"categories": [
+			"device"
+		]
+	},
+	"signal_cellular_connected_no_internet_2_bar": {
+		"name": "signal_cellular_connected_no_internet_2_bar",
+		"categories": [
+			"device"
+		]
+	},
+	"signal_cellular_connected_no_internet_3_bar": {
+		"name": "signal_cellular_connected_no_internet_3_bar",
+		"categories": [
+			"device"
+		]
+	},
+	"signal_wifi_0_bar": {
+		"name": "signal_wifi_0_bar",
+		"categories": [
+			"device"
+		]
+	},
+	"signal_wifi_1_bar": {
+		"name": "signal_wifi_1_bar",
+		"categories": [
+			"device"
+		]
+	},
+	"signal_wifi_1_bar_lock": {
+		"name": "signal_wifi_1_bar_lock",
+		"categories": [
+			"device"
+		]
+	},
+	"signal_wifi_2_bar": {
+		"name": "signal_wifi_2_bar",
+		"categories": [
+			"device"
+		]
+	},
+	"signal_wifi_2_bar_lock": {
+		"name": "signal_wifi_2_bar_lock",
+		"categories": [
+			"device"
+		]
+	},
+	"signal_wifi_3_bar": {
+		"name": "signal_wifi_3_bar",
+		"categories": [
+			"device"
+		]
+	},
+	"signal_wifi_3_bar_lock": {
+		"name": "signal_wifi_3_bar_lock",
+		"categories": [
+			"device"
+		]
+	},
+	"border_color": {
+		"name": "border_color",
+		"categories": [
+			"editor"
+		]
+	},
+	"format_color_fill": {
+		"name": "format_color_fill",
+		"categories": [
+			"editor"
+		]
+	},
+	"format_color_text": {
+		"name": "format_color_text",
+		"categories": [
+			"editor"
+		]
+	},
+	"cast_for_education": {
+		"name": "cast_for_education",
+		"categories": [
+			"hardware"
+		]
+	},
+	"add_location": {
+		"name": "add_location",
+		"categories": [
+			"maps"
+		]
+	},
+	"edit_location": {
+		"name": "edit_location",
+		"categories": [
+			"maps"
+		]
+	},
+	"not_listed_location": {
+		"name": "not_listed_location",
+		"categories": [
+			"maps"
+		]
+	},
+	"person_pin_circle": {
+		"name": "person_pin_circle",
+		"categories": [
+			"maps"
+		]
+	},
+	"pin_drop": {
+		"name": "pin_drop",
+		"categories": [
+			"maps"
+		]
+	},
+	"place": {
+		"name": "place",
+		"categories": [
+			"maps"
+		]
+	},
+	"domain": {
+		"name": "domain",
+		"categories": [
+			"social"
+		]
+	}
+}

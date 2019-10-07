@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>round-lightbulb</title>
+    <desc>Created with Sketch.</desc>
+    <g id="round-lightbulb" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10,20 L14,20 C14.5522847,20 15,20.4477153 15,21 C15,21.5522847 14.5522847,22 14,22 L10,22 C9.44771525,22 9,21.5522847 9,21 C9,20.4477153 9.44771525,20 10,20 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+        <path d="M12,2 C8.14,2 5,5.14 5,9 C5,11.38 6.19,13.47 8,14.74 L8,17 C8,17.55 8.45,18 9,18 L15,18 C15.55,18 16,17.55 16,17 L16,14.74 C17.81,13.47 19,11.38 19,9 C19,5.14 15.86,2 12,2 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

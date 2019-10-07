@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>baseline-do_not_disturb_off</title>
+    <desc>Created with Sketch.</desc>
+    <g id="baseline-do_not_disturb_off" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M17,11 L17,13 L15.54,13 L20.22,17.68 C21.380773,16.0135129 22.0020837,14.0309034 22,12 C22,6.48 17.52,2 12,2 C9.89,2 7.93,2.66 6.32,3.78 L13.54,11 L17,11 Z M2.27,2.27 L1,3.54 L3.78,6.32 C2.61922705,7.98648711 1.99791634,9.96909656 2,12 C2,17.52 6.48,22 12,22 C14.11,22 16.07,21.34 17.68,20.22 L20.46,23 L21.73,21.73 L11,11 L2.27,2.27 Z M7,13 L7,11 L8.46,11 L10.46,13 L7,13 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

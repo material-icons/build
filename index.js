@@ -80,7 +80,7 @@ setBranch(options.branch).then(result => {
 
     // Save data.json
     let savedData = {
-        root: 'https://cyberalien.github.io/google-material-design-icons-updated/svg/',
+        root: 'https://material-icons.github.io/material-icons/svg/',
         asset_url_pattern: '{family}/{icon}.svg',
         icons: []
     };

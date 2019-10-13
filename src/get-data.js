@@ -10,7 +10,7 @@ module.exports = () => new Promise((fulfill, reject) => {
         remote: config.dataURL,
         keepCache: true,
         debug: true,
-        expiration: Math.floor(Date.now() / 1000 / 86400), // Change cache every 24 hours
+        expiration: 1000 * 86400, // Change cache every 24 hours
         returnMeta: true
     }).then(meta => {
         if (!config.isOriginalBranch() && !meta.cached) {

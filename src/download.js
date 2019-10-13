@@ -30,7 +30,7 @@ module.exports = options => new Promise((fulfill, reject) => {
             let metaData = fs.readFileSync(metaFile, 'utf8');
 
             metaData = JSON.parse(metaData);
-            checkCache = metaData.expires && metaData.expires < Date.now();
+            checkCache = metaData.expires > Date.now();
         }
     }
 

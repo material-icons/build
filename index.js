@@ -1,24 +1,15 @@
 "use strict";
 
-const fs = require('fs');
 const config = require('./src/config');
-const files = require('./src/files');
 const colors = require('./src/colors');
+const build = require('./src/build');
 const setBranch = require('./src/branch');
-const getData = require('./src/get-data');
-const getIcons = require('./src/get-icons');
-const parseIcons = require('./src/parse-icons');
-const saveIcons = require('./src/save-icons');
-const testChanges = require('./src/test-changes');
+const commitChanges = require('./src/commit-changes');
+const mergeOriginal = require('./src/merge');
 
-let icons;
-
-// to update icons list:
-// rm -rf cache/*.json cache/*.html
-
-let options = {
-    branch: null
-};
+let branch = null,
+    commit = false,
+    publish = false;
 
 // Get arguments. Complex function because of possibility to add more options
 if (process.argv.length > 2) {
@@ -42,84 +33,105 @@ if (process.argv.length > 2) {
                     branchNext = true;
                     break;
 
+                case '--commit':
+                    commit = true;
+                    break;
+
+                case '--publish':
+                    commit = true;
+                    publish = true;
+                    break;
+
+                case '--no-clone':
+                    config.clone = false;
+                    break;
+
                 default:
                     throw new Error('Unknown command: ' + cmd);
             }
             return;
         }
         if (branchNext) {
-            options.branch = cmd;
+            branch = cmd;
         }
     });
 }
 
-if (options.branch === null) {
-    console.error('Missing branch. Use node index --branch branch\nwhere branch is one of following: master, original');
-    return;
-}
+// Do stuff
+if (branch === null) {
 
-setBranch(options.branch).then(result => {
+    let merged = false,
+        changed;
 
-    return getData();
+    // Parse all branches
+    if (!commit) {
+        console.error(colors.error + '[error]' + colors.reset + ': Cannot parse all branches without committing changes. Add --publish or --commit');
+        return;
+    }
 
-}).then(result => {
+    // Parse original branch
+    build('original').then(res => {
 
-    console.log('Got meta data (' + result.icons.length + ' icons)');
-    console.log('Categories: ' + config.categories.map(item => item.length < 3 ? item.toUpperCase() : item.slice(0, 1).toUpperCase() + item.slice(1)).join(', '));
-
-    // Clean up output directory
-    files.cleanup(config.outputDir + '/svg');
-
-    // Get all icons
-    icons = getIcons(result);
-
-    // Parse all icons
-    return parseIcons(icons);
-
-}).then(() => {
-
-    // Save data.json
-    let savedData = {
-        root: 'https://material-icons.github.io/material-icons/svg/',
-        asset_url_pattern: '{family}/{icon}.svg',
-        icons: []
-    };
-
-    Object.keys(icons).sort((a, b) => a.localeCompare(b)).forEach(name => {
-        let icon = icons[name],
-            item = {
-                name: name,
-                version: icon.version,
-                unsupported_families: icon.clones,
-                categories: icon.categories,
-                tags: icon.tags
-            };
-
-        // Clean up attributes
-        if (!item.version) {
-            delete item.version;
-        }
-
-        ['categories', 'tags', 'unsupported_families'].forEach(attr => {
-            if (!item[attr] || !item[attr].length) {
-                delete item[attr];
+        changed = res;
+        if (changed.changed) {
+            if (changed.changed) {
+                console.log('Updated:', changed.updated, '\nAdded:', changed.added);
             }
-        });
+            return commitChanges('original', changed.added, changed.updated, publish);
+        }
 
-        savedData.icons.push(item);
+    }).then(() => {
+
+        // Change branch
+        return setBranch('master');
+
+    }).then(() => {
+
+        // Merge changes
+        if (changed.changed) {
+            merged = true;
+            return mergeOriginal();
+        }
+
+    }).then(() => {
+
+        // Build master branch
+        return build('master');
+
+    }).then(res => {
+
+        changed = res;
+        if (changed.changed) {
+            console.log('Updated:', changed.updated, '\nAdded:', changed.added);
+        }
+        if (changed.changed || merged) {
+            return commitChanges('master', changed.added, changed.updated, publish);
+        }
+
+    }).catch(err => {
+        console.error(colors.error + '[error]' + colors.reset + ':', err);
     });
 
-    // Save icons
-    fs.writeFileSync(config.outputDir + '/data.json', JSON.stringify(savedData, null, 4));
-    saveIcons(icons);
+} else {
 
-    // Check for changes
-    return testChanges();
+    let changed;
 
-}).then(changed => {
+    // Parse one branch
+    build(branch).then(res => {
+        changed = res;
+        if (changed.changed) {
+            console.log('Updated:', changed.updated, '\nAdded:', changed.added);
+            if (commit) {
+                // Commit changes
+                return commitChanges(branch, changed.added, changed.updated, publish);
+            }
+        }
+    }).then(() => {
 
-}).catch(err => {
+        // Done
 
-    console.error(colors.error + '[error]' + colors.reset + ':', err);
+    }).catch(err => {
+        console.error(colors.error + '[error]' + colors.reset + ':', err);
+    });
 
-});
+}

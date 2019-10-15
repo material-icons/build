@@ -1,8 +1,6 @@
 "use strict";
 
-const fs = require('fs');
 const path = require('path');
-const child_process = require('child_process');
 
 let isOriginal = null;
 
@@ -13,8 +11,11 @@ let config = {
     debugRequests: true,
     dataURL: 'https://fonts.google.com/metadata/icons',
 
+    // Repository
+    repo: 'git@github.com:material-icons/material-icons.git',
+
     // Directories
-    outputDir: path.dirname(path.dirname(__dirname)) + '/material-icons',
+    outputDir: path.dirname(__dirname) + '/material-icons',
     fixedIconsDir: path.dirname(__dirname) + '/fixed',
     customIconsDir: path.dirname(__dirname) + '/custom',
     removedIconsDir: path.dirname(__dirname) + '/removed',
@@ -32,32 +33,5 @@ let config = {
         isOriginal = branch === 'original';
     },
 };
-
-try {
-    let data = fs.readFileSync('.config.json', 'utf8');
-    data = JSON.parse(data);
-    config = Object.assign(config, data);
-} catch(err) {
-}
-
-// Detect current branch
-let result = child_process.execSync('git branch', {
-    cwd: config.outputDir
-});
-result = result.toString('utf8').split('\n').filter(item => item.indexOf('*') !== -1);
-if (result.length !== 1) {
-    throw new Error('Cannot detect branch in output');
-}
-let branch = result[0].replace('*', '').trim();
-
-switch (branch) {
-    case 'original':
-    case 'master':
-        config.branch = branch;
-        break;
-
-    default:
-        throw new Error('Unknown branch: "' + branch + '"');
-}
 
 module.exports = config;

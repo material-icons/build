@@ -5,7 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-original": "node index --branch original",
+    "build-master": "node index --branch master"
   },
   "author": "",
   "license": "ISC",

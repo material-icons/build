@@ -7,12 +7,14 @@ This is a build script for SVG repository.
 This repository builds contents of SVG repository: https://github.com/material-icons/material-icons
 
 Build process:
+* Clone latest version of SVG repository (unless --no-clone flag is set)
 * Get latest meta data from material.io
 * Download new icons
 * Merge with fixed and custom icons
 * Clean up and optimize all icons
 * Generate SVG repository
-
+* Commit changes (if --commit flag is set)
+* Publish repository (if --publish flag is set)
 
 ## Branches
 
@@ -73,6 +75,8 @@ Make sure you have write access rights to repository before using --publish flag
 
 All icons are cleaned up and optimized.
 
-Icons that are not 24x24 are scaled to 24x24, then optimized.
+Icons that are not 24x24 are scaled to 24x24, then optimized using SVGO.
 
+After SVGO optimization, arcs in paths are de-optimized because some software still does not support compressed arc flags.
 
+Resulting icons are as small as possible and compatible with all software that supports SVG.

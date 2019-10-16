@@ -33,11 +33,6 @@ npm install
 
 ## Build script
 
-To build all branches run
-```
-npm run build
-```
-
 To build one branch run one of following commands:
 ```
 node index --branch original

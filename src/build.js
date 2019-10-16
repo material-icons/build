@@ -41,7 +41,7 @@ module.exports = branch => new Promise((fulfill, reject) => {
         // Save data.json
         let savedData = {
             root: 'https://material-icons.github.io/material-icons/svg/',
-            asset_url_pattern: '{family}/{icon}.svg',
+            asset_url_pattern: '{icon}/{family}.svg',
             icons: []
         };
 

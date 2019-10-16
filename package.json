@@ -5,6 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "node index --commit",
     "build-original": "node index --branch original",
     "build-master": "node index --branch master"
   },

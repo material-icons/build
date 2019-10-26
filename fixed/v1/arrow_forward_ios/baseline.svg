@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
-    <title>arrow_back_ios/baseline</title>
+    <title>arrow_forward_ios/baseline</title>
     <desc>Created with Sketch.</desc>
-    <g id="arrow_back_ios/baseline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Path" fill="#000000" fill-rule="nonzero" points="18 4 10 12 18 20 16 22 6 12 16 2"></polygon>
+    <g id="arrow_forward_ios/baseline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" fill="#000000" fill-rule="nonzero" points="6 4 14 12 6 20 8 22 18 12 8 2"></polygon>
     </g>
 </svg>

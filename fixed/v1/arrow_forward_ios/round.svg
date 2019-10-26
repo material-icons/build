@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>arrow_forward_ios/round</title>
+    <desc>Created with Sketch.</desc>
+    <g id="arrow_forward_ios/round" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M6.70710678,4.70710678 L14,12 L14,12 L6.70710678,19.2928932 C6.31658249,19.6834175 6.31658249,20.3165825 6.70710678,20.7071068 L7.29289322,21.2928932 C7.68341751,21.6834175 8.31658249,21.6834175 8.70710678,21.2928932 L17.2928932,12.7071068 C17.6834175,12.3165825 17.6834175,11.6834175 17.2928932,11.2928932 L8.70710678,2.70710678 C8.31658249,2.31658249 7.68341751,2.31658249 7.29289322,2.70710678 L6.70710678,3.29289322 C6.31658249,3.68341751 6.31658249,4.31658249 6.70710678,4.70710678 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

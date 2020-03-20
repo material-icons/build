@@ -3,6 +3,13 @@
 const tools = require('@iconify/tools');
 const cheerio = require('cheerio');
 
+const iconAttributes = {
+	xmlns: 'http://www.w3.org/2000/svg',
+	width: '24',
+	height: '24',
+	viewBox: '0 0 24 24',
+};
+
 module.exports = (key, code) => {
 	let svg = new tools.SVG(code),
 		$root = svg.$svg(':root');
@@ -155,6 +162,13 @@ module.exports = (key, code) => {
 								props[attr] = '.3';
 							}
 						});
+
+						// Set attributes order: 'opacity' then 'd' to guarantee consistent svg output
+						if (props.d !== void 0 && props.opacity !== void 0) {
+							const d = props.d;
+							$child.removeAttr('d');
+							props.d = d;
+						}
 					}
 
 					break;
@@ -181,6 +195,20 @@ module.exports = (key, code) => {
 
 	removeGroups($root);
 	checkNodes($root);
+
+	// Clean up attributes order to guarantee consistent svg output
+	const values = Object.assign({}, iconAttributes);
+	Object.keys($root[0].attribs).forEach(attr => {
+		if (values[attr] === void 0) {
+			console.log('Deleted SVG attribute "' + attr + '" in ' + key);
+		} else {
+			values[attr] = $root[0].attribs[attr];
+		}
+		delete $root[0].attribs[attr];
+	});
+	Object.keys(values).forEach(attr => {
+		$root[0].attribs[attr] = values[attr];
+	});
 
 	return svg.toString();
 };

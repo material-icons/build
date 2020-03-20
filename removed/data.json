@@ -286,5 +286,25 @@
 		"categories": [
 			"social"
 		]
+	},
+	"motorcycle": {
+		"name": "motorcycle",
+		"version": 1,
+		"categories": [
+			"action"
+		],
+		"tags": [
+			"bicycle",
+			"bike",
+			"cycle",
+			"moped",
+			"motorcycle",
+			"ride",
+			"riding",
+			"transportation",
+			"vehicle",
+			"wheel",
+			"wheels"
+		]
 	}
 }

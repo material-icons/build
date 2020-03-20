@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const fs = require('fs');
 const config = require('./config');
@@ -11,78 +11,87 @@ const parseIcons = require('./parse-icons');
 const saveIcons = require('./save-icons');
 const testChanges = require('./test-changes');
 
-module.exports = branch => new Promise((fulfill, reject) => {
+module.exports = branch =>
+	new Promise((fulfill, reject) => {
+		let icons;
 
-    let icons;
+		console.log('Parsing branch:', branch);
 
-    console.log('Parsing branch:', branch);
+		// Change branch
+		setBranch(branch)
+			.then(result => {
+				return getData();
+			})
+			.then(result => {
+				console.log('Got meta data (' + result.icons.length + ' icons)');
+				console.log(
+					'Categories: ' +
+						config.categories
+							.map(item =>
+								item.length < 3
+									? item.toUpperCase()
+									: item.slice(0, 1).toUpperCase() + item.slice(1)
+							)
+							.join(', ')
+				);
 
-    // Change branch
-    setBranch(branch).then(result => {
+				// Clean up output directory
+				files.cleanup(config.outputDir + '/svg');
 
-        return getData();
+				// Get all icons
+				icons = getIcons(result);
 
-    }).then(result => {
+				// Parse all icons
+				return parseIcons(icons);
+			})
+			.then(() => {
+				// Save data.json
+				let savedData = {
+					root: 'https://material-icons.github.io/material-icons/svg/',
+					asset_url_pattern: '{icon}/{family}.svg',
+					icons: [],
+				};
 
-        console.log('Got meta data (' + result.icons.length + ' icons)');
-        console.log('Categories: ' + config.categories.map(item => item.length < 3 ? item.toUpperCase() : item.slice(0, 1).toUpperCase() + item.slice(1)).join(', '));
+				Object.keys(icons)
+					.sort((a, b) => a.localeCompare(b))
+					.forEach(name => {
+						let icon = icons[name],
+							item = {
+								name: name,
+								version: icon.version,
+								unsupported_families: icon.clones,
+								categories: icon.categories,
+								tags: icon.tags,
+							};
 
-        // Clean up output directory
-        files.cleanup(config.outputDir + '/svg');
+						// Clean up attributes
+						if (!item.version) {
+							delete item.version;
+						}
 
-        // Get all icons
-        icons = getIcons(result);
+						['categories', 'tags', 'unsupported_families'].forEach(attr => {
+							if (!item[attr] || !item[attr].length) {
+								delete item[attr];
+							}
+						});
 
-        // Parse all icons
-        return parseIcons(icons);
+						savedData.icons.push(item);
+					});
 
-    }).then(() => {
+				// Save icons
+				fs.writeFileSync(
+					config.outputDir + '/data.json',
+					JSON.stringify(savedData, null, 4)
+				);
+				saveIcons(icons);
 
-        // Save data.json
-        let savedData = {
-            root: 'https://material-icons.github.io/material-icons/svg/',
-            asset_url_pattern: '{icon}/{family}.svg',
-            icons: []
-        };
-
-        Object.keys(icons).sort((a, b) => a.localeCompare(b)).forEach(name => {
-            let icon = icons[name],
-                item = {
-                    name: name,
-                    version: icon.version,
-                    unsupported_families: icon.clones,
-                    categories: icon.categories,
-                    tags: icon.tags
-                };
-
-            // Clean up attributes
-            if (!item.version) {
-                delete item.version;
-            }
-
-            ['categories', 'tags', 'unsupported_families'].forEach(attr => {
-                if (!item[attr] || !item[attr].length) {
-                    delete item[attr];
-                }
-            });
-
-            savedData.icons.push(item);
-        });
-
-        // Save icons
-        fs.writeFileSync(config.outputDir + '/data.json', JSON.stringify(savedData, null, 4));
-        saveIcons(icons);
-
-        // Check for changes
-        return testChanges();
-
-    }).then(changed => {
-
-        fulfill(changed);
-
-    }).catch(err => {
-
-        reject(err);
-
-    });
-});
+				// Check for changes
+				return testChanges();
+			})
+			.then(changed => {
+				fulfill(changed);
+			})
+			.catch(err => {
+				reject(err);
+			});
+	});

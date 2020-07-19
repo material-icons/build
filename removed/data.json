@@ -306,5 +306,27 @@
 			"wheel",
 			"wheels"
 		]
+	},
+	"details": {
+		"name": "details",
+		"version": 6,
+		"unsupported_families": [
+			"sharp",
+			"outline"
+		],
+		"categories": [
+			"image"
+		],
+		"tags": [
+			"details",
+			"edit",
+			"editing",
+			"enhance",
+			"image",
+			"photo",
+			"photography",
+			"sharpen",
+			"triangle"
+		]
 	}
 }

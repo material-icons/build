@@ -328,5 +328,12 @@
 			"sharpen",
 			"triangle"
 		]
+	},
+	"leave_bags_at_home": {
+		"name": "leave_bags_at_home",
+		"version": 1,
+		"categories": [
+			"social"
+		]
 	}
 }

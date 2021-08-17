@@ -11,8 +11,9 @@ const iconAttributes = {
 };
 
 module.exports = (key, code) => {
-	let svg = new tools.SVG(code),
-		$root = svg.$svg(':root');
+	const svg = new tools.SVG(code);
+	const cheerio = svg.$svg;
+	const $root = cheerio(':root');
 
 	function removeGroups($parent) {
 		let $groups = [];
@@ -32,12 +33,12 @@ module.exports = (key, code) => {
 
 		// console.log('\nRemoving groups!\nOriginal: ' + svg.toString());
 
-		$groups.forEach($group => {
+		$groups.forEach(($group) => {
 			let group = $group.get(0),
 				groupProps = {};
 
 			// Find all attributes to pass to child nodes
-			Object.keys(group.attribs ? group.attribs : {}).forEach(prop => {
+			Object.keys(group.attribs ? group.attribs : {}).forEach((prop) => {
 				let value = group.attribs[prop];
 
 				switch (prop) {
@@ -81,7 +82,7 @@ module.exports = (key, code) => {
 				let $child = cheerio(child),
 					childProps = child.attribs;
 
-				Object.keys(groupProps).forEach(prop => {
+				Object.keys(groupProps).forEach((prop) => {
 					if (childProps && childProps[prop] === void 0) {
 						$child.attr(prop, groupProps[prop]);
 					}
@@ -109,6 +110,7 @@ module.exports = (key, code) => {
 				case 'circle':
 				case 'polygon':
 				case 'path':
+				case 'ellipse':
 					if (props) {
 						if (props.fill !== void 0) {
 							switch (props.fill) {
@@ -133,7 +135,7 @@ module.exports = (key, code) => {
 							break;
 						}
 
-						['opacity', 'fill-opacity'].forEach(attr => {
+						['opacity', 'fill-opacity'].forEach((attr) => {
 							if (props[attr] === void 0) {
 								return;
 							}
@@ -198,7 +200,7 @@ module.exports = (key, code) => {
 
 	// Clean up attributes order to guarantee consistent svg output
 	const values = Object.assign({}, iconAttributes);
-	Object.keys($root[0].attribs).forEach(attr => {
+	Object.keys($root[0].attribs).forEach((attr) => {
 		if (values[attr] === void 0) {
 			console.log('Deleted SVG attribute "' + attr + '" in ' + key);
 		} else {
@@ -206,7 +208,7 @@ module.exports = (key, code) => {
 		}
 		delete $root[0].attribs[attr];
 	});
-	Object.keys(values).forEach(attr => {
+	Object.keys(values).forEach((attr) => {
 		$root[0].attribs[attr] = values[attr];
 	});
 

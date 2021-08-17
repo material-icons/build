@@ -335,5 +335,81 @@
 		"categories": [
 			"social"
 		]
+	},
+	"amp_stories": {
+		"name": "amp_stories",
+		"version": 5,
+		"unsupported_families": [
+			"sharp"
+		],
+		"categories": [
+			"content"
+		],
+		"tags": [
+			"amp",
+			"flow",
+			"gallery",
+			"stories",
+			"view"
+		]
+	},
+	"outbond": {
+		"name": "outbond",
+		"version": 1,
+		"unsupported_families": [
+			"sharp"
+		],
+		"categories": [
+			"action"
+		]
+	},
+	"share_arrival_time": {
+		"name": "share_arrival_time",
+		"version": 1,
+		"unsupported_families": [
+			"sharp"
+		],
+		"categories": [
+			"maps"
+		]
+	},
+	"eco": {
+		"name": "eco",
+		"version": 8,
+		"unsupported_families": [
+			"sharp"
+		],
+		"categories": [
+			"action"
+		],
+		"tags": [
+			"eco",
+			"economical",
+			"green",
+			"leaf",
+			"nature"
+		]
+	},
+	"facebook": {
+		"name": "facebook",
+		"version": 5,
+		"unsupported_families": [
+			"sharp",
+			"outline",
+			"round",
+			"twotone"
+		],
+		"categories": [
+			"social"
+		],
+		"tags": [
+			"application",
+			"apps",
+			"f",
+			"facebook",
+			"logo",
+			"post",
+			"social"
+		]
 	}
 }

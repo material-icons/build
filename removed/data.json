@@ -411,5 +411,33 @@
 			"post",
 			"social"
 		]
+	},
+	"emoji_flags": {
+		"name": "emoji_flags",
+		"version": 10,
+		"unsupported_families": [
+			"sharp",
+			"outline"
+		],
+		"categories": [
+			"social"
+		],
+		"tags": [
+			"country",
+			"destination",
+			"emoji",
+			"flags",
+			"landmark",
+			"location",
+			"mark",
+			"milepost",
+			"milestone",
+			"nation",
+			"place",
+			"pole",
+			"save",
+			"social",
+			"world"
+		]
 	}
 }

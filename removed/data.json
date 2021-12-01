@@ -439,5 +439,216 @@
 			"social",
 			"world"
 		]
+	},
+	"adobe": {
+		"name": "adobe",
+		"version": 2,
+		"unsupported_families": [
+			"sharp",
+			"outline",
+			"round",
+			"twotone"
+		],
+		"categories": [
+			"social"
+		]
+	},
+	"apple": {
+		"name": "apple",
+		"version": 2,
+		"unsupported_families": [
+			"sharp",
+			"outline",
+			"round",
+			"twotone"
+		],
+		"categories": [
+			"social"
+		]
+	},
+	"discord": {
+		"name": "discord",
+		"version": 2,
+		"unsupported_families": [
+			"sharp",
+			"outline",
+			"round",
+			"twotone"
+		],
+		"categories": [
+			"social"
+		]
+	},
+	"paypal": {
+		"name": "paypal",
+		"version": 2,
+		"unsupported_families": [
+			"sharp",
+			"outline",
+			"round",
+			"twotone"
+		],
+		"categories": [
+			"social"
+		]
+	},
+	"quora": {
+		"name": "quora",
+		"version": 2,
+		"unsupported_families": [
+			"sharp",
+			"outline",
+			"round",
+			"twotone"
+		],
+		"categories": [
+			"social"
+		]
+	},
+	"reddit": {
+		"name": "reddit",
+		"version": 2,
+		"unsupported_families": [
+			"sharp",
+			"outline",
+			"round",
+			"twotone"
+		],
+		"categories": [
+			"social"
+		]
+	},
+	"shopify": {
+		"name": "shopify",
+		"version": 2,
+		"unsupported_families": [
+			"sharp",
+			"outline",
+			"round",
+			"twotone"
+		],
+		"categories": [
+			"social"
+		]
+	},
+	"snapchat": {
+		"name": "snapchat",
+		"version": 2,
+		"unsupported_families": [
+			"sharp",
+			"outline",
+			"round",
+			"twotone"
+		],
+		"categories": [
+			"social"
+		]
+	},
+	"telegram": {
+		"name": "telegram",
+		"version": 2,
+		"unsupported_families": [
+			"sharp",
+			"outline",
+			"round",
+			"twotone"
+		],
+		"categories": [
+			"social"
+		]
+	},
+	"tiktok": {
+		"name": "tiktok",
+		"version": 2,
+		"unsupported_families": [
+			"sharp",
+			"outline",
+			"round",
+			"twotone"
+		],
+		"categories": [
+			"social"
+		]
+	},
+	"wechat": {
+		"name": "wechat",
+		"version": 2,
+		"unsupported_families": [
+			"sharp",
+			"outline",
+			"round",
+			"twotone"
+		],
+		"categories": [
+			"social"
+		]
+	},
+	"woo_commerce": {
+		"name": "woo_commerce",
+		"version": 2,
+		"unsupported_families": [
+			"sharp",
+			"outline",
+			"round",
+			"twotone"
+		],
+		"categories": [
+			"social"
+		]
+	},
+	"wordpress": {
+		"name": "wordpress",
+		"version": 2,
+		"unsupported_families": [
+			"sharp",
+			"outline",
+			"round",
+			"twotone"
+		],
+		"categories": [
+			"social"
+		]
+	},
+	"wifi_tethering_error_rounded": {
+		"name": "wifi_tethering_error_rounded",
+		"version": 9,
+		"unsupported_families": [
+			"sharp",
+			"outline",
+			"twotone"
+		],
+		"categories": [
+			"device"
+		],
+		"tags": [
+			"!",
+			"alert",
+			"attention",
+			"caution",
+			"cell",
+			"cellular",
+			"connection",
+			"danger",
+			"data",
+			"error",
+			"exclamation",
+			"important",
+			"internet",
+			"mark",
+			"mobile",
+			"network",
+			"notification",
+			"phone",
+			"rounded",
+			"scan",
+			"service",
+			"signal",
+			"speed",
+			"symbol",
+			"tethering",
+			"warning",
+			"wifi",
+			"wireless"
+		]
 	}
 }

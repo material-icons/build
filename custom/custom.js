@@ -81,6 +81,10 @@ module.exports = {
             version: 1,
             categories: ['social']
         },
+        save_all: {
+            version: 1,
+            categories: ['content']
+        },
 
         /**
          * Custom category: math

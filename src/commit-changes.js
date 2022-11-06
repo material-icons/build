@@ -25,8 +25,8 @@ module.exports = (branch, added, updated, publish) =>
 				patch = parseInt(patch) + 1;
 				version.push(patch);
 				data.version = version.join('.');
-				data = JSON.stringify(data, null, 2) + '\n';
 				console.log('Bumped package version to', data.version);
+				data = JSON.stringify(data, null, 2) + '\n';
 				fs.writeFileSync(filename, data, 'utf8');
 			}
 		}
